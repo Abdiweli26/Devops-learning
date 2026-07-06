@@ -6,16 +6,16 @@ This respository has been personalised to track my progress as learn the differe
 ## Repository structure 
 
 devops-learning/
-├── 01-linux/           # Linux Fundamentals
-├── 02-bash/            # Bash Scripting
-├── 03-git/             # Version Control
-├── 04-networking/      # How the Internet Works
-├── 05-docker/          # Containers
-├── 06-aws/             # Cloud (AWS)
-├── 07-terraform/       # Infrastructure as Code
-├── 08-cicd/            # CI/CD Pipelines
-├── 09-kubernetes/      # Container Orchestration
-└── challenges/         # Extra Challenges
+[x] 01-linux/          
+[] 02-bash/            
+[] 03-git/             
+[] 04-networking/      
+[] 05-docker/          
+[] 06-aws/             
+[] 07-terraform/      
+[]  08-cicd/            
+[] 09-kubernetes/      
+[] challenges/        
 
 ###Each module contains:
 - Notes
