@@ -6,7 +6,8 @@ This respository has been personalised to track my progress as learn the differe
 ## Repository structure 
 
 devops-learning/
-[x] 01-linux/          
+
+-  [ ] 01-linux/          
 [] 02-bash/            
 [] 03-git/             
 [] 04-networking/      
