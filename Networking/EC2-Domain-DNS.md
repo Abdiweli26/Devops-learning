@@ -3,8 +3,9 @@
 I’ve created my EC2 instance and pointed its Public IPv4 address to a domain I bought on Cloudflare. Here I’ll show you how I created it and launched it. 
 
 # **Live Example**
-
 https://abdiwelia45.org/
+
+
 ---
 #**How to Create an EC2+DOMAIN+DNS**
 
