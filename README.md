@@ -7,8 +7,8 @@ This respository has been personalised to track my progress as learn the differe
 
 devops-learning/
 
--  [ ] 01-linux/          
-[] 02-bash/            
+-  [x] 01-linux/          
+-[] 02-bash/            
 [] 03-git/             
 [] 04-networking/      
 [] 05-docker/          
