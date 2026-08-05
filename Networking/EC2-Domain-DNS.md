@@ -6,7 +6,7 @@ I’ve created my EC2 instance and pointed its Public IPv4 address to a domain I
 https://abdiwelia45.org/
 
 
-#**How to Create an EC2+DOMAIN+DNS**
+# **How to Create an EC2+DOMAIN+DNS**
 
 **Step 1**
 
