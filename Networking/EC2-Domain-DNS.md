@@ -1,14 +1,16 @@
 # **Intro:**
 
-I’ve created my EC2 instance and I’ve pointed my EC2 Public IPv4 address to a domain I bought on Cloudflare. Here I’ll show you how I created it and launched with 
+I’ve created my EC2 instance and pointed its Public IPv4 address to a domain I bought on Cloudflare. Here I’ll show you how I created it and launched it. 
 
-# Live Example
+# **Live Example**
 
 https://abdiwelia45.org/
+---
+#**How to Create an EC2+DOMAIN+DNS**
 
 **Step 1**
 
-Go on AWS and create an account.
+Go to AWS and create an account.
 
 **Step 2**
 
