@@ -59,3 +59,17 @@ su username
 sudo command  
 
 ```
+
+
+# Group Management
+
+1- Creating a group
+2- Adding user to a group 
+
+
+
+```
+sudo addgroup
+
+sudo usermod -ag [Groupname] [Username]
+```
