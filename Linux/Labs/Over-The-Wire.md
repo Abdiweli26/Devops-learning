@@ -6,26 +6,6 @@ Here I'll be documenting myself complete the Linux Bandit Levels 1-20
 
 Bandit is a wargame designed to teach Linux command-line skills through 34 levels. You'll SSH into remote servers and solve challenges to find passwords for the next level.
 
-```
-## Bandit Level 0
-```
-
-bash
-
-```bash
-ssh bandit0@bandit.labs.overthewire.org -p 2220
-# Password: bandit0
-```
-
-Once logged in, read the README file to find the password for Level 1:
-
-bash
-
-```bash
-cat README
-# Use this password to SSH as bandit1
-```
-
 
 #  Bandit Level 0 
 
@@ -50,7 +30,7 @@ The password for the next level is stored in a file called **-** located in th
 Cat readme`
 
 **Username**: 
-ssh bandit1@bandit.labs.overthewire.org -p 2220
+ssh bandit2@bandit.labs.overthewire.org -p 2220
 **Password**:
 6y2kwnwK6grgvwvpvLaa2T1cpFEKOhNR
 
@@ -60,54 +40,74 @@ I used LS to list what's under the Home Directory, I then ran Cat readme to view
 **What I learnt:**
 Before attempting more advanced techniques, it's important to perform basic enumeration. Using `ls` to discover files and `cat` to read their contents is often the first step in finding valuable information on a Linux system.
 
-#  Bandit Level 1 → Level 2
+#  Bandit Level 2 → Level 3
 
-
-**Challenge**: 
-The password for the next level is stored in a file called **-** located in the home directory
-
-**Solution**:
-`ls` 
-`Cat ./-`
-
-**Username**: 
-ssh bandit1@bandit.labs.overthewire.org -p 2220
-
-**Password**:
-PK8fYLZg2hnHSz83plBL1iEPKdD3QToB
-
-**Explanation**: 
-```
-I ran ls to list the files, The file "-" showed. To view files with special characters I ran ./ before the file name.
-```
-
-**What I learnt:**
-
-Learnt how to access files with special names by prefixing them with `./`, allowing me to read the contents of the file named - after locating it with `ls`.
-
-# Bandit Level 2  → Level 3
 
 **Challenge**: 
 The password for the next level is stored in a file called `--spaces in this filename--` located in the home directory
 
 **Solution**:
-```
-cat ./"--spaces in this filename--"
-.```
+
+`cat ./"--spaces in this filename--"`
 
 **Username**: 
-ssh bandit2@bandit.labs.overthewire.org -p 2220
+ssh bandit3@bandit.labs.overthewire.org -p 2220
 **Password**:
 7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME
 
 **Explanation**: 
-ls to view the list of files in the home directory
-You'll then see --spaces in this filename--
-To open this you'll need a combo of ./ and "", becuase to view files with special characters we use ./ but to view a file name with spaces you can either use \ to fill the space or put the file in quotation.
-This file has both hence why I used./ & ""
+- Ran `ls` to view the files in the home directory.
+- Identified the file named `--spaces in this filename--`.
+- Used `./` to reference the file directly because its name begins with special characters.
+- Wrapped the filename in quotation marks (`""`) so the spaces were treated as part of the filename rather than separate arguments.
+- Read the file contents with `cat` to obtain the password.
 
 **What I learnt:**
-Learnt how to handle filenames containing special characters and spaces by using ./ to reference the file directly and quotation marks ("") to treat the filename as a single argument, allowing me to access and read the file successfully.
+Learnt how to handle filenames containing both special characters and spaces by using `./` to reference the file directly and quotation marks to treat the filename as a single argument.
 
 
+#  Bandit Level 3 → Level 4
 
+
+**Challenge**: 
+The password for the next level is stored in a hidden file in the inhere directory.
+
+**Solution**:
+
+`Cat ./"...Hiding-From-You"`
+
+
+**Username**: 
+ssh bandit4@bandit.labs.overthewire.org -p 2220
+**Password**:
+xzTXq1rDJQVVAzdv5cHq1TQytTWufAMq
+
+**Explanation**: 
+- Ran `ls` to list the files and directories in the home directory.
+- Noticed a directory named `inhere` and navigated into it using `cd inhere`.
+- Used `ls -a` to display all files, including hidden files that begin with a dot (`.`).
+- Identified the hidden file and used `cat` to read its contents.
+- Retrieved the password for the next level from the hidden file.
+
+**What I learnt:**
+Learnt how to view hidden files in Linux using `ls -a` and access files that are not displayed by default, reinforcing the importance of thorough directory enumeration.
+
+#  Bandit Level 4 → Level 5
+
+
+**Challenge**: 
+The password for the next level is stored in the only human-readable file in the **inhere** directory. Tip: if your terminal is messed up, try the “reset” command.
+
+**Solution**:
+ls
+
+
+**Username**: 
+ssh bandit@bandit.labs.overthewire.org -p 2220
+**Password**:
+E
+
+**Explanation**: 
+
+
+**What I learnt:**
