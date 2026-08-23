@@ -1,9 +1,3 @@
-
-
-
-
-
-
 #Stage 1: Build stage
 
 FROM python:3.8-slim as build 

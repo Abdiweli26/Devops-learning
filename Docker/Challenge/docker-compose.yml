@@ -1,0 +1,24 @@
+# Define the services that make up the application
+services: 
+     
+     # Flask web applicatiion 
+    flask:
+      build: .
+# Publiish Flask so the browser can access it on the localhost:5000
+      ports: 
+        - "5000:5000"
+
+# Start the redis service before the Flask service
+      depends_on: 
+        - redis
+
+# Redis database
+    redis:
+      image: redis:latest 
+# Store Redis data in a persistent Docker volume
+      volumes: 
+        - redis-data:/data
+
+# Persistent storage for Redis data
+volumes: 
+  redis-data:

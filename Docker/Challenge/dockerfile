@@ -1,0 +1,12 @@
+#Base image - provides Python for our application-Slim. means lightweight
+FROM python:3.12-slim
+# Set /app as the working directory inside the image
+WORKDIR /app
+#Copy the dependency list into the image
+COPY requirement.txt .
+#Install. the Python dependencies listed in requirement.txt
+RUN pip install --no-cache-dir -r requirement.txt
+#Copy the Flask application code into the working directory 
+COPY app.py .
+# Start the Flask application when the container runs
+CMD ["python", "app.py"]

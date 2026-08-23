@@ -414,3 +414,11 @@ docker rm web
 | Easy to start a Cluster                  | Difficult to start a cluster                  |
 | Limited to the Docker API's capabilities | Not limited to the Docker API's Capabilities  |
 |                                          |                                               |
+
+# Containers From Scratch 
+
+**Fundamental components for a Container **
+- Base Image
+- Application
+- Dependencies 
+- Commands
